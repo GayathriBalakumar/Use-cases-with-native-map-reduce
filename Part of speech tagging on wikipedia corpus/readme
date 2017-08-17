@@ -1,1 +1,8 @@
+#Part of Speech tagging on wikipedia
 
+A simple map-reduce application to find out the no.of.words under each category of part of speech. For identifying the part of speech of
+word, folllwing vocabulary is used. 
+http://icon.shef.ac.uk/Moby/mpos.html
+
+Map Phase: Split words and compare them against vocabulary. 
+Reduce Phase: Count words grouped by the identified part of speech. 
