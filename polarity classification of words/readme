@@ -1,2 +1,7 @@
 # Polarity Classification of Words
 
+Words from large text files are cosidered and are scanned for their polarity in the given context using Map Reduce Logic. 
+Map : Every mapped word is compared with a standard positive/negative word corpus. 
+Reduce : Aggregated count grouped by polarity so that result is no.of.positive and no.of.negative words in the file. 
+
+
