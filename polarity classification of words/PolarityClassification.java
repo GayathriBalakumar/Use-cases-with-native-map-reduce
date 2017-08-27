@@ -81,7 +81,7 @@ public class PolarityClassification{
 	    conf.set("yarn.resourcemanager.address", "cshadoop1.utdallas.edu:8032");
 	    conf.set("mapreduce.framework.name", "yarn");
 	    Job job = Job.getInstance(conf, "part 1");
-	    job.setJarByClass(part1.class);
+	    job.setJarByClass(PolarityClassification.class);
 	    job.setMapperClass(WordPolaritizerMapper.class);
 	    job.setCombinerClass(TotalCounterReducer.class);
 	    job.setReducerClass(TotalCounterReducer.class);
