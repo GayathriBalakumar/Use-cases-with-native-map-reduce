@@ -144,7 +144,7 @@ public class PartOfSpeechTagging{
 	    conf.set("yarn.resourcemanager.address", "cshadoop1.utdallas.edu:8032");
 	    conf.set("mapreduce.framework.name", "yarn");
 	    Job job = Job.getInstance(conf, "part 2");
-	    job.setJarByClass(part2.class);
+	    job.setJarByClass(PartOfSpeechTagging.class);
 	    job.setMapperClass(POSMapper.class);
 	    job.setMapOutputKeyClass(IntWritable.class);
 	    job.setMapOutputValueClass(Text.class);
